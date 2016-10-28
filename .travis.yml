@@ -1,0 +1,13 @@
+language: go
+
+go:
+  - 1.7
+
+install:
+  - go get -v resenje.org/recovery
+
+before_script:
+  - go vet -v resenje.org/recovery/...
+
+script:
+  - go test -v resenje.org/recovery/...

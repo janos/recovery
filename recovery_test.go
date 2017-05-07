@@ -92,7 +92,7 @@ func TestServiceDefaults(t *testing.T) {
 	}
 	panicText := "panicking for testing"
 
-	defualtLogFunc = logRecorder.LogFunc
+	defaultLogFunc = logRecorder.LogFunc
 
 	func() {
 		defer recoveryService.Recover()
